@@ -1,0 +1,210 @@
+import Image from 'next/image';
+import {BsArrowRight } from 'react-icons/bs';
+export function AboutSection() {
+  const steps = [
+    {
+      number: '01',
+      title: 'Análise Inicial',
+      description: 'Avaliamos seu consumo atual e identificamos oportunidades',
+    },
+    {
+      number: '02',
+      title: 'Proposta Customizada',
+      description: 'Desenvolvemos uma estratégia específica para seu negócio',
+    },
+    {
+      number: '03',
+      title: 'Processo Simplificado',
+      description: 'Gerenciamos toda a migração sem complicações',
+    },
+    {
+      number: '04',
+      title: 'Resultados Garantidos',
+      description: 'Economia imediata e sustentabilidade energética',
+    },
+  ];
+
+  return (
+    <section
+      id="market-info"
+      className="mx-auto max-w-7xl px-6 py-24 lg:px-8 relative text-black overflow-hidden "
+    >
+      <div className="container-max section-padding relative">
+        <div className="grid lg:grid-cols-5 gap-16 items-center">
+          {/* Content */}
+          <div className="lg:col-span-3" data-aos="fade-right">
+            {/* Title */}
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8">
+              Liberdade para{' '}
+              <span className="bg-gradient-to-r from-primary-500 to-primary-600 bg-clip-text text-transparent">
+                escolher{' '}
+              </span>
+              sua energia
+            </h2>
+
+            {/* Enhanced Description */}
+            <div className="space-y-8 mb-12">
+              <div className="text-xl font-light text-neutral-300 leading-relaxed">
+                No{' '}
+                <span className="font-semibold text-primary-500 relative">
+                  Mercado Livre de Energia
+                  <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-primary-400 to-primary-600"></div>
+                </span>
+                , sua empresa ganha autonomia total para negociar energia,
+                garantindo{' '}
+                <span className="font-semibold text-neutral-100">
+                  economia real
+                </span>{' '}
+                e sustentabilidade.
+                <span>
+                  Contratos inteligentes adaptados ao seu perfil de consumo, com{' '}
+                  {''}
+                  <span className="font-semibold text-neutral-100">
+                    previsibilidade financeira
+                  </span>{' '}
+                  e sustentabilidade em cada kilowatt consumido.
+                </span>
+              </div>
+              {/* Key Points */}
+              <div className="space-y-4">
+                <div 
+                  className="flex items-start gap-4"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <div className="w-12 h-12 text-primary-500 flex items-center justify-center flex-shrink-0">
+                    {/* <CurrencyDollarIcon className="w-12 h-12" /> */}
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-neutral-100 mb-2 text-lg">
+                      Economia Comprovada
+                    </h4>
+                    <p className="text-neutral-300 leading-relaxed">
+                      Reduza até 30% dos custos com energia através de
+                      negociação direta no mercado livre
+                    </p>
+                  </div>
+                </div>
+
+                <div 
+                  className="flex items-start gap-4"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <div className="w-12 h-12 text-primary-500 flex items-center justify-center flex-shrink-0">
+                    {/* <BoltIcon className="w-8 h-8" /> */}
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-neutral-100 mb-2 text-lg">
+                      Energia 100% Renovável
+                    </h4>
+                    <p className="text-neutral-300 leading-relaxed">
+                      Contribua para um futuro sustentável com energia limpa
+                      certificada e rastreável
+                    </p>
+                  </div>
+                </div>
+
+                <div 
+                  className="flex items-start gap-4"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <div className="w-12 h-12 text-primary-500 flex items-center justify-center flex-shrink-0">
+                    {/* <CheckCircleIcon className="w-8 h-8" /> */}
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-neutral-100 mb-2 text-lg">
+                      Migração Simplificada
+                    </h4>
+                    <p className="text-neutral-300 leading-relaxed">
+                      Processo sem burocracia, sem investimento inicial e sem
+                      interrupção no fornecimento
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* CTA Button */}
+            <div className="mt-8" data-aos="fade-up" data-aos-delay="400">
+              <a
+                href="#contact-form"
+                className="inline-flex items-center gap-3 bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
+              >
+                <span>Descubra seu potencial de economia</span>
+                <BsArrowRight className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+
+          {/* Image Area - Right Side: replace placeholder with homem.png */}
+          <div 
+            className="relative lg:col-span-2 flex items-center justify-center"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            {/* Main Image Container with Enhanced Effects */}
+            <div className="relative w-full max-w-[800px] z-10">
+              {/* Glow Effect Behind Image */}
+              <div className="absolute inset-0 transform scale-105"></div>
+
+              {/* Image */}
+              <div className="relative w-full h-auto">
+                <Image
+                  src="/images/homem.avif"
+                  alt="Homem"
+                  width={800}
+                  height={800}
+                  quality={100}
+                  loading="lazy"
+                  className="relative w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Process Section */}
+        <div className="pt-24" data-aos="fade-up" data-aos-delay="500">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl md:text-3xl font-medium text-neutral-200 mb-4">
+              Como chegamos até você
+            </h3>
+            <p className="text-lg text-neutral-400 max-w-2xl mx-auto">
+              Um processo direto e sem complicações para sua migração energética
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            {steps.map((step, index) => (
+              <div 
+                key={index} 
+                className="relative group"
+                data-aos="fade-up"
+                data-aos-delay={100 * (index + 1)}
+              >
+                {/* Connector line */}
+                {index < steps.length - 1 && (
+                  <div className="hidden lg:block absolute top-6 -right-3 w-6 h-0.5 bg-neutral-600"></div>
+                )}
+
+                <div className="text-center p-4">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-neutral-800 text-primary-400 font-medium text-sm rounded-full mb-4 border border-neutral-700 group-hover:border-primary-500/50 transition-colors">
+                    {step.number}
+                  </div>
+                  <h4 className="text-lg font-medium text-neutral-200 mb-2">
+                    {step.title}
+                  </h4>
+                  <p className="text-sm text-neutral-400 leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
