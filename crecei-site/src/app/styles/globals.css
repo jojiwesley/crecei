@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+   /* Cores da identidade DOT Energia */
+   --color-brand-primary: #0068ff;
+   --color-brand-secondary: #FFBC08;
+   --color-brand-black: #1B1B1B;
+   --color-brand-white: #F2EFEB;
+  
+  /* Variações da cor primária da marca (azul #0068ff) */
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #0068ff;
+  --color-primary-700: #0056cc;
+  --color-primary-800: #004499;
+  --color-primary-900: #003366;
+  
+  /* Variações da cor secundária da marca (amarelo #FFBC08) */
+  --color-secondary-50: #fffbeb;
+  --color-secondary-100: #fef3c7;
+  --color-secondary-200: #fde68a;
+  --color-secondary-300: #fcd34d;
+  --color-secondary-400: #fbbf24;
+  --color-secondary-500: #f59e0b;
+  --color-secondary-600: #FFBC08;
+  --color-secondary-700: #cc9606;
+  --color-secondary-800: #997005;
+  --color-secondary-900: #664b04;
+  
+  /* Variações da cor branca da marca (bege #F2EFEB) */
+  --color-white-50: #fefdfb;
+  --color-white-100: #fdfcfb;
+  --color-white-200: #fbf9f7;
+  --color-white-300: #f9f7f5;
+  --color-white-400: #f2efeb;
+  --color-white-500: #F2EFEB;
+  --color-white-600: #e8e4df;
+  --color-white-700: #ddd8d2;
+  --color-white-800: #d2ccc5;
+  --color-white-900: #c7c0b8;
+  
+  /* Variações da cor preta da marca (preto #1B1B1B) */
+  --color-black-50: #f5f5f5;
+  --color-black-100: #ebebeb;
+  --color-black-200: #d6d6d6;
+  --color-black-300: #c2c2c2;
+  --color-black-400: #adadad;
+  --color-black-500: #999999;
+  --color-black-600: #858585;
+  --color-black-700: #707070;
+  --color-black-800: #5c5c5c;
+  --color-black-900: #1B1B1B;
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
