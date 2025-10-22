@@ -17,7 +17,13 @@ export function HeroSection() {
           className="object-cover object-center -z-10"
           sizes="100vw"
         />
-        
+        <Image
+          src="/image/cloud3.svg"
+          alt="Cloud Transition"
+          width={1920}
+          height={400}
+                    className="absolute -bottom-1 left-0 w-full h-auto -z-4"
+        />
         {/* Overlay para contraste do texto */}
         <div className="absolute inset-0 bg-black/50 -z-5"></div>
         
