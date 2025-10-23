@@ -24,8 +24,8 @@ export function HeroSection() {
           height={400}
                     className="absolute -bottom-1 left-0 w-full h-auto -z-4"
         />
-        {/* Overlay para contraste do texto */}
-        <div className="absolute inset-0 bg-black/50 -z-5"></div>
+        {/* Overlay para contraste do texto - sutil para leveza */}
+        <div className="absolute inset-0 bg-black/30 -z-5"></div>
         
       {/* Content - Centralizado no espaço restante */}
       <div className="flex-1 flex items-center justify-center">
@@ -36,29 +36,29 @@ export function HeroSection() {
               className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-white mb-6 md:mb-8 tracking-tight px-4"
               data-aos="zoom-in"
             >
-              Desenvolvendo todo o{' '}
-              <span className="text-primary-600">
-                potencial{' '}
+              Desenvolvendo Todo o{' '}
+              <span className="bg-gradient-to-r from-[#0068ff] to-blue-800 bg-clip-text text-transparent font-black">
+                Potencial{' '}
               </span>
-                do seu filho
+                do Seu Filho
             </h1>
 
             {/* Subtitle */}
             <p 
-              className="text-lg md:text-xl lg:text-2xl text-neutral-100 mb-6 md:mb-8 font-light leading-relaxed max-w-4xl mx-auto drop-shadow-md px-4"
+              className="text-lg md:text-xl lg:text-2xl text-white mb-6 md:mb-8 font-light leading-relaxed max-w-4xl mx-auto px-4"
               data-aos="zoom-in"
               data-aos-delay="200"
             >
               A Crecei oferece ensino de alta qualidade e suporte personalizado para cada aluno, preparando-os para o sucesso acadêmico e social.
             </p>
 
-            {/* CTA Button - Enhanced */}
+            {/* CTA Buttons - Enhanced */}
             <div 
               data-aos="zoom-in"
               data-aos-delay="400"
-              className="px-4"
+              className="flex flex-col sm:flex-row gap-4 justify-center px-4"
             >
-              <Button text="Entre em contato" href="#contact-form" />
+              <Button text="Matricule-se Agora" href="#contact-form" />
             </div>
           </div>
         </div>

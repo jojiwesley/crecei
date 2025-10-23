@@ -1,7 +1,8 @@
-import Image from "next/image";
 import { HeroSection } from "./sections/HeroSection";
 import { Footer } from "./components/Footer";
 import { AboutSection } from "./sections/AboutSection";
+import { ProgramsSection } from "./sections/ProgramsSection";
+import { TestimonialsSection } from "./sections/TestimonialsSection";
 
 export default function Home() {
   return (
@@ -9,6 +10,8 @@ export default function Home() {
       <main className="">
        <HeroSection />
        <AboutSection />
+       <ProgramsSection />
+       <TestimonialsSection />
       <Footer/>
       </main>
     </div>
