@@ -1,0 +1,21 @@
+/* Custom Swiper Styles */
+
+.programs-swiper {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.programs-swiper .swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+.programs-swiper .swiper-slide > div {
+  width: 100%;
+}
+
+/* Ensure equal height for all cards */
+.programs-swiper .swiper-wrapper {
+  align-items: stretch;
+}
