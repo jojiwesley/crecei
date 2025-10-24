@@ -1,8 +1,11 @@
 import { HeroSection } from "./sections/HeroSection";
 import { Footer } from "./components/Footer";
 import { AboutSection } from "./sections/AboutSection";
-import { ProgramsSection } from "./sections/ProgramsSection";
+import { ServiceSection } from "./sections/ServiceSection";
 import { TestimonialsSection } from "./sections/TestimonialsSection";
+import { ContactSection } from "./sections/ContactSection";
+import { GallerySection } from "./sections/GallerySection";
+import { FAQSection } from "./sections/FAQSection";
 
 export default function Home() {
   return (
@@ -10,8 +13,11 @@ export default function Home() {
       <main className="">
        <HeroSection />
        <AboutSection />
-       <ProgramsSection />
+       <ServiceSection />
        <TestimonialsSection />
+       <GallerySection />
+       <ContactSection />
+       <FAQSection />
       <Footer/>
       </main>
     </div>

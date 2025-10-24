@@ -1,7 +1,7 @@
 import { Button } from '../components/Button';
 import { ProgramsCarousel } from '../components/ProgramsCarousel';
 
-export function ProgramsSection() {
+export function ServiceSection() {
   const programs = [
     {
       iconName: 'BsBook',
@@ -56,18 +56,18 @@ export function ProgramsSection() {
   return (
     <section
       id="programs-section"
-      className="bg-gray-50 py-16 md:py-24 lg:py-32 relative overflow-hidden"
+      className="bg-gradient-to-br from-blue-700 via-blue-400 to-blue-700 py-16 md:py-24 lg:py-32 relative"
     >
       {/* Background decorative elements */}
-      <div className="absolute top-0 right-0 w-40 h-40 bg-blue-100 rounded-full translate-x-20 -translate-y-20 opacity-30"></div>
-      <div className="absolute bottom-0 left-0 w-32 h-32 bg-yellow-100 rounded-full -translate-x-16 translate-y-16 opacity-30"></div>
+      <div className="absolute top-0 right-0 w-28 h-28 bg-blue-300 rounded-full translate-x-16 -translate-y-20 opacity-90"></div>
+      <div className="absolute bottom-0 left-0 w-28 h-28 bg-blue-200 rounded-full -translate-x-16 translate-y-16 opacity-90"></div>
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4 md:mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4 md:mb-6">
             Programas Completos para{' '}
-            <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+            <span className="text-secondary-300">
               Cada Criança
             </span>
           </h2>
